@@ -1,9 +1,24 @@
+- **Node.js**
+- **MongoDB**
+- **Ollama (avec le modèle Mistral)**
+- **Express**
+- **dotenv**
+
+---
+
+## 🚀 Démarrage Rapide
+
+### 1. Cloner le Dépôt
+
+```bash
 git clone <ton-url-depot>
 cd <nom-du-dossier>
 2. Installer les Dépendances
+bash
+Copier
+Modifier
 npm install
 3. Configurer les Variables d’Environnement
-
 Crée un fichier .env à la racine du projet et ajoute :
 
 env
@@ -55,12 +70,11 @@ Modifier
 Tu peux documenter tes routes API ici plus tard.
 
 🛠️ Commandes Utiles
-Commande	Description
 npm install	Installer les dépendances
 node src/server.js	Lancer le serveur backend
 
 
- Exemple de fichier .env
+✅ Exemple de fichier .env
 env
 Copier
 Modifier
@@ -68,6 +82,6 @@ PORT=3000
 MONGO_URI=mongodb://localhost:27017/nom-de-ta-db
 OLLAMA_HOST=http://localhost:11434
 MODEL_NAME=mistral
-
-
----
+yaml
+Copier
+Modifier
