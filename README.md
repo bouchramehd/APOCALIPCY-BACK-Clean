@@ -15,8 +15,7 @@ git clone <ton-url-depot>
 cd <nom-du-dossier>
 2. Installer les Dépendances
 bash
-Copier
-Modifier
+
 npm install
 3. Configurer les Variables d’Environnement
 Crée un fichier .env à la racine du projet et ajoute :
