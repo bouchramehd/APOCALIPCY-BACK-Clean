@@ -1,0 +1,129 @@
+Je vais maintenant vous présenter une démonstration de l’application MindCheck.
+
+À l’ouverture, sur la page de cnx om trouve un fond animé, une citation  qui change automatiquement, 
+supposant que je fais renter un utlisitaeur qui existe pas ,
+on voie le loggin failed
+du coup on doit cree un compte , j vais utilser un compte que j ai deja cree pour mieux
+visualiser le suivi des mood pendant des jours 
+on se retrouve sur la page home avec 
+
+
+un tab how are u feeling today qui se derigie automatiquement sur la page de mood 
+
+quote of today qui change a chaque entree de login pour chaque utilisaterur 
+
+page mood: pour enregistrer son humeur avec un emoji,et mettre  une note avec
+Historique : pour consulter les humeurs passées- on visualise l hummour quand on viens d ajouter
+
+Calendrier : qui affiche les humeurs par date
+
+Graphique : pour visualiser l’évolution de l’humeur dans le temps
+
+Tous les enregistrements sont connectés à une API avec base de données.
+
+L’interface est pensée pour être agréable, fluide et accessible à tous.
+
+✅ Slide – Bilan & Conclusion
+Ce que ce projet nous a apporté :
+
+Création d’une application utile centrée sur le bien-être mental
+
+ca nous aussi permet
+
+Maîtrise d’un stack complet : React Native, API Node.js, base MongoDB
+ ainsi de
+Renforcer des compétences en design, gestion de données et animation mobile
+
+Pistes d’amélioration futures :
+
+Ajouter une page Profil avec les infos personnelles
+
+Intégrer un menu Paramètres (langue, thème, rappels, etc.)
+
+Développer un chatbot intelligent qui accompagne l’utilisateur selon son humeur
+
+Mettre en place une sauvegarde cloud
+
+Proposer une version multilingue
+
+
+
+
+📱 Écrans principaux (screens) :
+LoginScreen – Connexion de l’utilisateur
+
+RegisterScreen – Création de compte
+
+HomeScreen – Accueil avec fond animé, emoji et citation
+
+MoodEntryScreen – Saisie d’une humeur (emoji, note, commentaire)
+
+HistoryScreen – Liste des humeurs enregistrées (activité récente)
+
+CalendarScreen – Affichage calendrier avec humeurs par date
+
+ChartScreen – Affichage des graphiques de suivi d’humeur
+
+ProfileScreen (envisagé) – Gestion du profil utilisateur
+
+SettingsScreen (envisagé) – Paramètres (préférences, thème…)
+
+📦 Composants fonctionnels personnalisés :
+FloatingEmoji – Emoji flottant qui change selon l’humeur
+
+QuoteComponent – Citation dynamique qui se renouvelle
+
+RippleCircle – Fond animé doux en arrière-plan
+
+MoodCard / EntryCard – Affichage d’une humeur enregistrée
+
+🔁 Composants de navigation :
+BottomTabNavigator – Barre de navigation en bas
+
+StackNavigator – Gestion des routes entre les écrans
+🧠 Navigation
+@react-navigation/native – Base pour la navigation
+
+@react-navigation/native-stack – Navigation empilée (Stack)
+
+@react-navigation/bottom-tabs – Barre de navigation en bas
+
+react-native-screens, react-native-safe-area-context, react-native-gesture-handler – dépendances nécessaires à la navigation
+
+🎨 UI & Icônes
+nativewind – Utiliser Tailwind CSS dans React Native
+
+react-native-vector-icons – Icônes customisées
+
+@expo/vector-icons – Icônes intégrées à Expo
+
+📅 Calendrier & Dates
+react-native-calendars – Composant calendrier
+
+dayjs – Gestion des dates légères et performantes
+
+📊 Graphiques & Visualisation
+react-native-chart-kit – Graphiques types (ligne, barres…)
+
+react-native-svg – Support SVG (requis pour les graphiques)
+
+victory-native – Autre librairie de graphiques
+
+d3-shape – Utilisé pour créer des formes dans les graphiques
+
+🗂️ Stockage local & API
+@react-native-async-storage/async-storage – Stockage local des données
+
+axios – Requêtes HTTP vers ton backend
+
+🎭 Animations & Ambiance
+framer-motion – Animations fluides (plus souvent côté web, mais utilisé ici pour des emojis flottants ou transitions)
+
+⚙️ Expo & React Native Core
+expo, react, react-native, expo-status-bar
+
+🧪 Développement uniquement
+@babel/core
+
+tailwindcss – utilisé avec NativeWin
+
