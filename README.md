@@ -10,11 +10,10 @@
 
 ### 1. Cloner le Dépôt
 
-```bash
+```
 git clone <ton-url-depot>
 cd <nom-du-dossier>
 2. Installer les Dépendances
-bash
 
 npm install
 3. Configurer les Variables d’Environnement
@@ -32,18 +31,12 @@ MODEL_NAME=mistral
 ▶️ Lancer le Serveur
 Démarre le serveur avec :
 
-bash
-Copier
-Modifier
 node src/server.js
 Le serveur écoute sur le port défini dans .env (par défaut : 3000).
 
 🧠 Modèle IA (Ollama + Mistral)
 Assure-toi d’avoir installé Ollama et téléchargé le modèle Mistral. Lance le modèle avec :
 
-bash
-Copier
-Modifier
 ollama run mistral
 Si c’est ta première fois, Ollama va télécharger automatiquement le modèle.
 
