@@ -40,12 +40,12 @@ ACTIONS SUGGÉRÉES:
 - [première action recommandée]
 - [deuxième action recommandée]
 - [troisième action recommandée]
-IMPORTANT : commence toujours par les mots RÉSUMÉ:, POINTS CLÉS: et ACTIONS SUGGÉRÉES: même si tu n’as pas d’informations.`;
+IMPORTANT : commence toujours par les mots RÉSUMÉ:, POINTS CLÉS: et ACTIONS SUGGÉRÉES: même si tu n'as pas d'informations.`;
     console.log('[LLM DEBUG] Sending request to Ollama...');
     let response;
     try {
       response = await axios.post(
-        'http://127.0.0.1:11434/api/generate',
+        'http://ollama:11434/api/generate',
         {
           model: 'mistral',
           prompt,
